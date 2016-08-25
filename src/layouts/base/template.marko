@@ -7,12 +7,29 @@
 
 <head>
     <title><layout-placeholder name="title"/></title>
+    <lasso-head/>
 </head>
 
 <body>
     <!-- Wrap All Content -->
     <layout-placeholder name="body"/>
     <!-- /Wrap All Content -->
+
+    <lasso-body/>
+
+    <!--
+    Allows widgets rendered on the server to be automatically initialize
+    when the page is loaded in the browser
+    -->
+    <await-reorderer/>
+
+    <init-widgets/>
+
+    <!--
+    Allow instant page refreshes when launched using browser-refresh:
+    https://github.com/patrick-steele-idem/browser-refresh
+    -->
+    <browser-refresh/>
 </body>
 
 </html>

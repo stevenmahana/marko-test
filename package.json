@@ -19,10 +19,13 @@
   "dependencies": {
     "app-module-path": "^1.1.0",
     "body-parser": "^1.15.2",
+    "browser-refresh-taglib": "^1.1.0",
     "connect-flash": "^0.1.1",
     "express": "^4.14.0",
     "express-session": "^1.14.0",
     "jade": "^1.9.2",
+    "lasso": "^2.5.8",
+    "lasso-marko": "^2.0.7",
     "marko": "^3.8.1",
     "marko-widgets": "^6.2.2",
     "moment": "^2.14.1",

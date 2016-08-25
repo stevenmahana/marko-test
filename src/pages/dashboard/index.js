@@ -9,8 +9,10 @@ module.exports = function(req, res) {
         v1api.weather({query: location}, callback);
     };
 
-    template.render({
+    // Use res.marko to render the template to the writeable response stream
+    // and also set the `Content-Type` header to 'text/html; charset=utf-8'
+    res.marko(template, {
         firstName: "frank",
         objectData: objectData
-    }, res);
+    });
 };
