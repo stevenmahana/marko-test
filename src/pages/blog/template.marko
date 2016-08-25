@@ -1,0 +1,30 @@
+<layout-use("src/layouts/base/template.marko")>
+    <layout-put into="title">Hello World!</layout-put>
+    <layout-put into="body">
+
+    <!-- HEADER -->
+    <include ("src/layouts/elements/header.marko") />
+    <!-- /HEADER -->
+
+    <!-- start: MAIN CONTAINER -->
+    <div class="main-container">
+
+        <!-- start: PAGE -->
+        <div class="main-content">
+            <await(objectData from data.objectData)>
+
+                <div> <app-hello name="richard" /> </div>
+
+            </await>
+        </div>
+        <!-- end: PAGE -->
+    </div>
+    <!-- end: MAIN CONTAINER -->
+
+    <!-- FOOTER -->
+    <include ("src/layouts/elements/footer.marko") />
+    <!-- /FOOTER -->
+
+    </layout-put>
+</layout-use>
+
